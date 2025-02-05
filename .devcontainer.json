@@ -1,8 +1,8 @@
 {
     "build": {
         "args": {
-            "TAG": "${localEnv:TAG}",
-            "VCS_REF": "${localEnv:VCS_REF}"
+            "TAG": "${localEnv:TAG:latest}",
+            "VCS_REF": "${localEnv:VCS_REF:alt}"
         },
         "context": ".",
         "dockerfile": "Dockerfile"
